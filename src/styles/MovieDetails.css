@@ -1,0 +1,88 @@
+
+.movie-container {
+
+    margin-top: 100px;
+
+}
+
+.poster-container {
+
+    text-align: center;
+}
+
+.poster-container img {
+
+    width: 400px;
+    height: 600px;
+    border: 1px solid rgb(170, 129, 129);
+    border-radius: 6px;
+    box-shadow: 1px 1px 8px 1px rgb(160, 134, 134);
+}
+
+.movie-details-container {
+
+    color: white;
+}
+
+.title {
+
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #a8abff;
+}
+
+.basic-details p:not(.title) {
+
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #a8abff;
+}
+
+.full-details {
+
+    border: 1px solid rgb(199, 164, 164);
+    border-radius: 6px;
+    margin: 0px 30px;
+    margin-top: 30px;
+    padding: 25px;
+    font-size: 20px;
+    box-shadow: 1px 1px 4px 1px rgb(160, 134, 134);
+    color: #dda82d;
+}
+
+.full-details p:not(.plot) {
+
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.plot {
+
+    margin: 45px 0px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+    background: #FFF;
+    box-sizing: border-box;
+    animation: flipX 1s linear infinite;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .search {
+
+    margin-top: 360px;
+  }
+  
+

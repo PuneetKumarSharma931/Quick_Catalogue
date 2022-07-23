@@ -1,0 +1,59 @@
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    margin-top: 340px;
+    text-align: center;
+}
+
+.Results {
+  color: white;
+  margin-top: 110px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+    background: #FFF;
+    box-sizing: border-box;
+    animation: flipX 1s linear infinite;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .search {
+
+    margin-top: 360px;
+  }
+
+  .movie-link {
+
+    text-decoration: none;
+    
+  }
+  
+  @keyframes flipX {
+    0% {
+      transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: perspective(200px) rotateX(-180deg) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(200px) rotateX(-180deg) rotateY(-180deg);
+    }
+  }
+      

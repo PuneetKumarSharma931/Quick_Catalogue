@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Catalogue from './components/Catalogue';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import MovieDetails from './components/MovieDetails';
+import { useContext } from 'react';
+import MovieContext from './context/MovieContext';
 
 function App() {
+
+  const { id } = useContext(MovieContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="quick-catalogue">
+        <Router>
+        <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Catalogue />} />
+            <Route exact path={id.length===0?sessionStorage.getItem('id'):id} element={<MovieDetails />} />
+          </Routes>
+        </Router>
     </div>
   );
 }
