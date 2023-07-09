@@ -30,11 +30,18 @@ const Navbar = () => {
 
   return (
     <nav>
-        <h2>Quick Catalogue</h2>
-        <form action="" method="GET">
-            <input type="text" name="title" id="title" placeholder="Search Title" value={title} onChange={handleChange} required />
-            <button type="submit" onClick={handleSearch}><i className="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+      <div className="Nav-Left">
+        <h2 style={{cursor: "pointer"}} onClick={()=>{navigate("/")}}>Quick Catalogue</h2>
+        <h3 style={{marginLeft: "35px", cursor: "pointer"}} onClick={()=>{navigate("/")}}>Home</h3>
+      </div>
+      <div className="Nav-Right">
+          <form action="" method="GET">
+              <input type="text" name="title" id="title" placeholder="Search Title" value={title} onChange={handleChange} required />
+              <button type="submit" onClick={handleSearch}><i className="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <button className="register-button" onClick={()=>{navigate("/register")}}><span><i className="fa-solid fa-user-plus"></i></span> Register</button>
+          <button className="login-button" onClick={()=>{navigate("/login")}}><span><i className="fa-solid fa-user"></i></span> Login</button>
+      </div>
     </nav>
   )
 };

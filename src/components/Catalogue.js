@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import '../styles/Catalogue.css';
 import MovieCard from './MovieCard';
 import MovieContext from '../context/MovieContext';
@@ -13,6 +13,12 @@ const Catalogue = () => {
 
       return ( str.charAt(0).toUpperCase() + str.slice(1));
     }
+
+    useEffect(()=>{
+
+      document.body.style.overflowY = 'scroll';
+      
+    }, []);
 
   return (
     <InfiniteScroll

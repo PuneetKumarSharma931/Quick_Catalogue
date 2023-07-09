@@ -1,0 +1,72 @@
+
+.register-container {
+
+    background-color: #F2D0A9;
+    width: 56%;
+    margin: 110px auto;
+    border: 1px solid #a38d74;
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+
+.register-header {
+    text-align: center;
+    background-color: #c8ad8e;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 30px 20px;
+    font-size: 19px;
+}
+
+.register-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    padding: 8px;
+    margin-top: 15px;
+}
+
+.register-body input {
+
+    width: 90%;
+    outline: none;
+    font-size: 19px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.register-body label {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 3px;
+}
+
+.register-body button {
+    margin: 15px auto;
+    width: 24%;
+    height: 44px;
+    background-color: #504136;
+    border: 2px solid #1b1118;
+    border-radius: 8px;
+    color: white;
+    font-weight: 200;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all 200ms ease-out;
+}
+
+.register-body button:hover {
+    background-color: #514338;
+    color: rgb(231, 216, 216);
+    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.error-msg {
+    color: rgb(224, 0, 0);
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
